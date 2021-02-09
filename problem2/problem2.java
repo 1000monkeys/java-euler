@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 class Main {
 	public static void main(String[] args){
-		ArrayList<Integer> sequence = new ArrayList<Integer>();
+        ArrayList<Integer> sequence = new ArrayList<Integer>();
         sequence.add(0);
         sequence.add(1);
         sequence.add(1);
