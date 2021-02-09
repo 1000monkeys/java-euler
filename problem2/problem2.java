@@ -1,7 +1,10 @@
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 class Main {
     public static void main(String[] args){
+        final long startTime = System.nanoTime();
+
         ArrayList<Integer> sequence = new ArrayList<Integer>();
         sequence.add(0);
         sequence.add(1);
@@ -18,5 +21,13 @@ class Main {
             }
         }
         System.out.println(sum);
+        
+        final long endTime = System.nanoTime();
+        System.out.println("Total execution time in nano seconds: " +
+                           (endTime - startTime)
+        );
+        System.out.println("Total execution time in milli seconds: " +
+                           TimeUnit.NANOSECONDS.toMillis(endTime - startTime)
+        );
     }
 }
