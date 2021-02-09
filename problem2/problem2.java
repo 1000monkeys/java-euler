@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 class Main {
-	public static void main(String[] args){
+    public static void main(String[] args){
         ArrayList<Integer> sequence = new ArrayList<Integer>();
         sequence.add(0);
         sequence.add(1);
@@ -18,5 +18,5 @@ class Main {
             }
         }
         System.out.println(sum);
-	}
+    }
 }
