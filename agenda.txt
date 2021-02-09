@@ -1,0 +1,5 @@
+2021-02-09
+Setup the Arch VM I use for development of java-euler
+Did problem 1&2&3
+Also made some source files for quick development
+Hopefully I will have to courage tomorrow to do atleast one other problem
