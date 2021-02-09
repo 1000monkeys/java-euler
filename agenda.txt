@@ -3,3 +3,7 @@ Setup the Arch VM I use for development of java-euler
 Did problem 1&2&3
 Also made some source files for quick development
 Hopefully I will have to courage tomorrow to do atleast one other problem
+
+2021-02-09
+Did problem 4&5&6&7
+Installed VIM addons
