@@ -10,15 +10,16 @@ class Main {
         final long startTime = System.nanoTime();
 
         int i = 0;
-        ArrayList<Integer> primes = new ArrayList<Integer>();
-        while (primes.size() < 10001){
+        int primeCount = 0;
+        while (primeCount < 10001){
             if (isPrime(i)){
-                primes.add(i);
+                primeCount += 1;
+                if (primeCount == 10000){
+                    System.out.println(i);
+                }
             }
             i += 1;
         }
-
-        System.out.println(primes.get(10000));
  
         final long endTime = System.nanoTime();
         System.out.println("Total execution time in nano seconds: " +
