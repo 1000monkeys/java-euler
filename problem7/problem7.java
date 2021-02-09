@@ -14,10 +14,11 @@ class Main {
         while (primes.size() < 10001){
             if (isPrime(i)){
                 primes.add(i);
-                System.out.println(i);
             }
             i += 1;
         }
+
+        System.out.println(primes.get(10000));
  
         final long endTime = System.nanoTime();
         System.out.println("Total execution time in nano seconds: " +

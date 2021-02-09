@@ -1,5 +1,9 @@
 import java.util.concurrent.TimeUnit;
 
+/*
+    Made by Kjell Vos
+    vos.kjell@gmail.com
+*/
 class Main {
     static long highest = 1;
 

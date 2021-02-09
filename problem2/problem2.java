@@ -1,6 +1,11 @@
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
+
+/*
+    Made by Kjell Vos
+    vos.kjell@gmail.com
+*/
 class Main {
     public static void main(String[] args){
         final long startTime = System.nanoTime();
