@@ -13,11 +13,11 @@ class Main {
         ArrayList<Integer> sequence = new ArrayList<Integer>();
         sequence.add(0);
         sequence.add(1);
-        sequence.add(1);
         
-        for (int i = 2; sequence.get(i) < 4_000_000; i += 1) {
+        for (int i = 1; sequence.get(i) < 4_000_000; i += 1) {
             sequence.add(sequence.get(i) + sequence.get(i - 1));
         }
+        sequence.remove(sequence.size() - 1);
 
         long sum = 0;
         for (int number : sequence) {
