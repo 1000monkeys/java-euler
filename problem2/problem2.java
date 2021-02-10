@@ -19,7 +19,7 @@ class Main {
         }
         sequence.remove(sequence.size() - 1);
 
-        long sum = 0;
+        int sum = 0;
         for (int number : sequence) {
             if (number % 2 == 0) {
                 sum += number;
