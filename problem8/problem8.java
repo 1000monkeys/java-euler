@@ -29,10 +29,9 @@ class Main {
                         "05886116467109405077541002256983155200055935729725" +
                         "71636269561882670428252483600823257530420752963450";
 
-        long sum = 1;
         long highest_sum = 0;
         for (int pos = 0; pos < 987; pos++){
-            sum = 1;
+            long sum = 1;
             for (int i = 0; i < 13; i++){
                 sum *= Character.getNumericValue(number.charAt(pos + i)); 
             }
