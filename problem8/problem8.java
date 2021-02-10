@@ -40,7 +40,9 @@ class Main {
                 System.out.println(highest_sum);
             }
         }
- 
+
+        // TEST TEST TEST
+
         final long endTime = System.nanoTime();
         System.out.println("Total execution time in nano seconds: " +
                            (endTime - startTime)
