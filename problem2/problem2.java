@@ -11,8 +11,8 @@ class Main {
         final long startTime = System.nanoTime();
 
         ArrayList<Integer> sequence = new ArrayList<Integer>();
-        sequence.add(0);
         sequence.add(1);
+        sequence.add(2);
         
         for (int i = 1; sequence.get(i) < 4_000_000; i += 1) {
             sequence.add(sequence.get(i) + sequence.get(i - 1));
