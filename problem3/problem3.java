@@ -18,27 +18,40 @@ class Main {
                            TimeUnit.NANOSECONDS.toMillis(endTime - startTime));
 	}
 
+    /**
+     * Factorizes the number
+     * If the factor is not a factor of number it returns number
+     * @return the number either unfactorized or the remainer after factorization
+     */
     private static long factorize(long number, long factor){
         if (number < factor){
             return number;
         }
         while(number % factor == 0){
             number /= factor;
-            if(factor > highest){
+            if(factor > highest){ // Save highest prime factor
                 highest = factor;
             }
         }
         return number;
     }
 
-    public static long find(long number){ //input number is which number to get the largest prime factor of
+    /**
+     * Find the highest factor of the input numner
+     * @return Highest factor
+     */
+    public static long find(long number){
+        // Try the 2 most common factors
         number = factorize(number, 2);
         number = factorize(number, 3);
 
         if (number >= 5){
             for(long i = 5; i * i <= number; i+= 6){
+                System.out.println("i = " + i + " " + (i+2));
                 number = factorize(number, i);
+                System.out.println(number);
                 number = factorize(number, i + 2);
+                System.out.println(number);
             }
         }
         
