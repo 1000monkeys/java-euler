@@ -47,11 +47,8 @@ class Main {
 
         if (number >= 5){
             for(long i = 5; i * i <= number; i+= 6){
-                System.out.println("i = " + i + " " + (i+2));
                 number = factorize(number, i);
-                System.out.println(number);
                 number = factorize(number, i + 2);
-                System.out.println(number);
             }
         }
         
