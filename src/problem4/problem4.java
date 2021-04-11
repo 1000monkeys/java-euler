@@ -8,21 +8,17 @@ class problem4 {
     public static void main(String[] args){
         final long startTime = System.nanoTime();
 
-        int max = 999;
         long maxResult = 0;
-
-        for(int i = max; i >= 0; i--){
-            for (int j = max; j >= 0; j--){
+        for(int i = 100; i <= 999; i++){
+            for (int j = 100; j <= 999; j++){
                 long possResult = i * j;
-                if (possResult == reverseNumber(possResult) && possResult > maxResult){
+                if (possResult > maxResult && possResult == reverseNumber(possResult)){
                     maxResult = possResult;
                 }
             }
-        }        
+        }
+        System.out.println(maxResult);
 
-        System.out.println(maxResult);        
-
- 
         final long endTime = System.nanoTime();
         System.out.println("Total execution time in nano seconds: " +
                            (endTime - startTime)

@@ -9,7 +9,7 @@ Did problem 4&5&6&7&8
 Installed VIM addons
 
 2021-02-10
-Made blog post problem 1
+Made blog post problem 1&2
 
 2021-03-23
-Made blog gpost problem 3
+Made blog post problem 3
