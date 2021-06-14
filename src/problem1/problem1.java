@@ -1,4 +1,5 @@
-package src.problem3;
+package src.problem1;
+
 import java.util.concurrent.TimeUnit;
 
 

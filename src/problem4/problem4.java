@@ -1,3 +1,5 @@
+package src.problem4;
+
 import java.util.concurrent.TimeUnit;
 
 /*
@@ -12,7 +14,7 @@ class problem4 {
         for(int i = 100; i <= 999; i++){
             for (int j = 100; j <= 999; j++){
                 long possResult = i * j;
-                if (possResult > maxResult && possResult == reverseNumber(possResult)){
+                if (possResult > maxResult && possResult == reverseNumber2(possResult)){
                     maxResult = possResult;
                 }
             }
@@ -28,7 +30,15 @@ class problem4 {
         );
     }
 
-    public static long reverseNumber(long number){
+    public static long reverseNumber1(long number){
+        return Long.parseLong(
+                new StringBuffer(
+                        String.valueOf(number)
+                ).reverse().toString()
+        );
+    }
+
+    public static long reverseNumber2(long number){
         long reverse = 0;
         while(number != 0){
             reverse = reverse * 10;

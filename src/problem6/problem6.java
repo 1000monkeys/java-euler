@@ -1,3 +1,5 @@
+package src.problem6;
+
 import java.util.concurrent.TimeUnit;
 
 /*
@@ -14,11 +16,11 @@ class problem6 {
             squaresOfEachSum += Math.pow(naturalNumber, 2);
             totalSum += naturalNumber;
         }
-        double squareOfTotalSum = Math.pow(totalSum, 2);
+        int squareOfTotalSum = Math.pow(totalSum, 2);
 
         System.out.println("Square of each sum: " + squaresOfEachSum);
-        System.out.printf("Square of the sum: %.0f\n", squareOfTotalSum); 
-        System.out.printf("Difference: %.0f\n", (squareOfTotalSum - squaresOfEachSum));
+        System.out.println("Square of total sum: " + squareOfTotalSum); 
+        System.out.println("Difference:" + (squareOfTotalSum - squaresOfEachSum));
 
         final long endTime = System.nanoTime();
         System.out.println("Total execution time in nano seconds: " +

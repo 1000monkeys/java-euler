@@ -1,3 +1,5 @@
+package src.problem5;
+
 import java.util.concurrent.TimeUnit;
 
 /*
@@ -23,7 +25,7 @@ class problem5 {
                 break;
             }
         }
- 
+        
         final long endTime = System.nanoTime();
         System.out.println("Total execution time in nano seconds: " +
                            (endTime - startTime)

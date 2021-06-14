@@ -1,3 +1,5 @@
+package src.problem10;
+
 import java.util.concurrent.TimeUnit;
 
 /*

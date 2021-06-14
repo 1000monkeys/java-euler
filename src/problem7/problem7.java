@@ -1,3 +1,6 @@
+package src.problem7;
+
+
 import java.util.concurrent.TimeUnit;
 
 /*
