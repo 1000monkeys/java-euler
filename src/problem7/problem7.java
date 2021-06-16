@@ -16,13 +16,12 @@ class problem7 {
         while (primeCount < 10001){
             if (isPrime(i)){
                 primeCount += 1;
-                if (primeCount == 10000){
-                    System.out.println(i);
-                }
             }
             i += 1;
         }
- 
+
+        System.out.println(i - 1);
+
         final long endTime = System.nanoTime();
         System.out.println("Total execution time in nano seconds: " +
                            (endTime - startTime)
