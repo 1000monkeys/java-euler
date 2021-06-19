@@ -10,13 +10,13 @@ class Main {
     public static void main(String[] args){
         final long startTime = System.nanoTime();
 	
-	long sum = 2;
-	for (int i = 3; i < 2_000_000; i += 2) {
-		if (isPrime(i)) {
-			sum += i;
-		}
+        long sum = 2;
+        for (int i = 3; i < 2_000_000; i += 2) {
+            if (isPrime(i)) {
+                sum += i;
+            }
 
-	}
+        }
         System.out.println(sum);
  
         final long endTime = System.nanoTime();
