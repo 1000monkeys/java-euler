@@ -16,7 +16,7 @@ class problem6 {
             squaresOfEachSum += Math.pow(naturalNumber, 2);
             totalSum += naturalNumber;
         }
-        int squareOfTotalSum = Math.pow(totalSum, 2);
+        double squareOfTotalSum = Math.pow(totalSum, 2);
 
         System.out.println("Square of each sum: " + squaresOfEachSum);
         System.out.println("Square of total sum: " + squareOfTotalSum); 
